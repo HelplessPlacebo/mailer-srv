@@ -28,6 +28,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const smtpUser = process.env.SMTP_USER;
         const smtpPass = process.env.SMTP_PASS;
         const recipient = process.env.RECIPIENT_EMAIL;
+        console.log(smtpPass,'smtpPass')
+        console.log(recipient, 'recipient')
+        console.log(smtpUser, 'smtpUser')
 
         if (!smtpUser || !smtpPass || !recipient) {
             console.error('Missing SMTP or recipient configuration');
