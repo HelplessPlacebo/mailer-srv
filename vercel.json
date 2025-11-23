@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/send-email", "dest": "/api/send-email.ts" },
+    { "src": "/(.*)", "dest": "/api/send-email.ts", "methods": ["OPTIONS"] }
+  ],
+  "functions": {
+    "api/send-email.ts": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
+}

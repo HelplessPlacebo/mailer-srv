@@ -1,0 +1,19 @@
+{
+  "name": "ural-promt-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "lint": "eslint . --ext .ts,.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "typescript": "^5.4.2",
+    "vercel": "^28.6.3"
+  }
+}
