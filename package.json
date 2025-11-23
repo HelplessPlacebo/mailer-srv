@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.5.1",
+    "@types/nodemailer": "^7.0.4",
     "typescript": "^5.4.2",
     "vercel": "^28.6.3"
   }

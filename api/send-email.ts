@@ -20,7 +20,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     try {
-        const body = (req.body && typeof req.body === 'object') ? req.body : JSON.parse(req.rawBody || '{}');
+        const body = (req.body && typeof req.body === 'object') ? req.body : {};
         const {name, phone, message} = body ?? {};
 
         const smtpHost = process.env.SMTP_HOST ?? 'smtp.yandex.ru';
